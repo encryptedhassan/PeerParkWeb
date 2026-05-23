@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeerPark - Smart P2P Parking</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+</head>
+<body class="bg-bg text-text1 font-dmsans text-base leading-relaxed overflow-x-hidden antialiased">
+
+  <nav class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-[5%] py-4 bg-bg/90 backdrop-blur-md border-b border-border1">
+    <div class="font-syne font-extrabold text-[1.4rem] text-green1 tracking-tight flex items-center">
+      Peer<em class="text-text1">Park</em>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#features" class="text-text2 hover:text-green1 text-[0.9rem] transition-colors">Features</a>
+      <a href="#how" class="text-text2 hover:text-green1 text-[0.9rem] transition-colors">How it Works</a>
+      <a href="#roles" class="text-text2 hover:text-green1 text-[0.9rem] transition-colors">For You</a>
+      <a href="#ai" class="text-text2 hover:text-green1 text-[0.9rem] transition-colors">AI Engine</a>
+      <a href="#requirements" class="text-text2 hover:text-green1 text-[0.9rem] transition-colors">Specs</a>
+      <a href="#download" class="bg-green1 text-[#0a1a0a] px-5 py-2 rounded-md font-semibold text-[0.88rem] hover:bg-accent hover:-translate-y-[1px] transition-all">Get the App</a>
+    </div>
+  </nav>
+
+  <section class="bg-bg2 min-h-screen flex flex-col items-center justify-center text-center px-[5%] pt-[120px] pb-[80px] relative overflow-hidden">
+    <div class="hero-grid absolute inset-0 opacity/10 opacity-[0.07]"></div>
+    <div class="absolute top-[20%] left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse,rgba(74,222,128,0.12)_0%,transparent_70%)] pointer-events-none"></div>
+
+    <div class="inline-flex items-center gap-2 bg-surface border border-border2 text-green1 text-[0.78rem] font-medium px-4 py-1.5 rounded-full mb-8 tracking-wide z-10">
+      <span class="w-1.5 h-1.5 rounded-full bg-green1 animate-pulse-dot"></span>
+      Currently Active Users · 5978
+    </div>
+
+    <h1 class="font-syne text-[clamp(2.3rem,3.5vw,5.5rem)] font-extrabold max-w-[820px] text-text1 mb-5 tracking-tight relative z-10">
+      Park smarter with <em class="not-italic text-green1">AI-powered</em> peer sharing
+    </h1>
+
+    <p class="text-[1.1rem] text-text2 max-w-[560px] font-light mb-10 leading-relaxed relative z-10">
+      PeerPark connects drivers to nearby private parking spaces through app in real-time. No more cruising, no more wasted spaces. <br><em class="italic text-green1 font-bold font-syne">Built for Ease, Designed for People.</em>
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 relative z-10">
+      <a href="#download" class="bg-green1 text-[#0a1a0a] px-8 py-3.5 rounded-lg font-syne font-bold text-[0.95rem] hover:-translate-y-0.5 hover:bg-accent transition-all flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Find Parking
+      </a>
+      <a href="#how" class="bg-transparent text-text2 border border-border2 px-7 py-3.5 rounded-lg text-[0.95rem] hover:border-green1 hover:text-green1 transition-all flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+        See How it Works
+      </a>
+    </div>
+
+    <div class="flex gap-12 mt-16 pt-10 border-t border-border1 relative z-10">
+      <div class="text-center">
+        <div class="font-syne text-3xl font-extrabold text-green1">30%</div>
+        <div class="text-[0.78rem] text-text3 mt-1">of city traffic is parking search</div>
+      </div>
+      <div class="text-center">
+        <div class="font-syne text-3xl font-extrabold text-green1">P2P</div>
+        <div class="text-[0.78rem] text-text3 mt-1">shared economy model</div>
+      </div>
+      <div class="text-center hidden sm:block">
+        <div class="font-syne text-3xl font-extrabold text-green1">AI</div>
+        <div class="text-[0.78rem] text-text3 mt-1">smart recommendations</div>
+      </div>
+      <div class="text-center hidden sm:block">
+        <div class="font-syne text-3xl font-extrabold text-green1">99.5%</div>
+        <div class="text-[0.78rem] text-text3 mt-1">target uptime SLA</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-24 px-[5%] bg-bg">
+    <div class="text-center mb-16">
+      <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">What PeerPark offers</div>
+      <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4 max-w-[640px] mx-auto">Every feature you need to park with confidence</h2>
+      <p class="text-text2 font-light text-base max-w-[560px] mx-auto leading-relaxed">From real-time maps to escrow-based payments. PeerPark is built end-to-end for Pakistan's urban drivers and homeowners.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-border1 border border-border1 rounded-2xl overflow-hidden">
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">🗺️</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Live Map Discovery</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Find available spots near you on an interactive map powered by OpenStreetMap — with real-time updates.</p>
+      </div>
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">📅</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Instant Booking Engine</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Select your timeframe, calculate costs automatically, and lock in your spot before anyone else does.</p>
+      </div>
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">🏠</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Host Listing Management</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Homeowners list their driveways with photos, hourly pricing, and calendar availability — all admin approved.</p>
+      </div>
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">🔔</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Real-Time Notifications</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Hosts get instant in-app alerts for new bookings. Drivers get confirmations and status updates.</p>
+      </div>
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">💸</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Escrow Payments</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Funds are securely held until session completion. Supports EasyPaisa and JazzCash natively.</p>
+      </div>
+      <div class="bg-bg2 p-8 hover:bg-surface transition-colors">
+        <div class="w-11 h-11 rounded-lg bg-surface2 border border-border2 flex items-center justify-center mb-5 text-xl">⭐</div>
+        <h3 class="font-syne text-[1.05rem] font-bold mb-2 tracking-tight">Safety Index & Ratings</h3>
+        <p class="text-[0.88rem] text-text2 leading-relaxed">Every spot is scored 1–10 on security. Mutual ratings build trust between hosts and drivers over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="py-24 px-[5%] bg-bg2">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+      <div>
+        <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">Simple process</div>
+        <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4">From searching to parked in minutes</h2>
+        <p class="text-text2 font-light text-base mb-10">PeerPark's flow is designed to be fast, secure, and intuitive for both drivers and hosts.</p>
+
+        <div class="flex flex-col">
+          <div class="flex gap-5 py-6 border-b border-border1">
+            <div class="font-syne text-[0.72rem] font-extrabold text-green1 min-w-[32px] pt-0.5 tracking-wider">01</div>
+            <div>
+              <h4 class="font-syne text-base font-bold mb-1">Sign up & verify</h4>
+              <p class="text-[0.88rem] text-text2">Register with your email, phone, and name. JWT-secured login keeps your account safe.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 py-6 border-b border-border1">
+            <div class="font-syne text-[0.72rem] font-extrabold text-green1 min-w-[32px] pt-0.5 tracking-wider">02</div>
+            <div>
+              <h4 class="font-syne text-base font-bold mb-1">Discover nearby spaces</h4>
+              <p class="text-[0.88rem] text-text2">Open the map — spot markers appear based on your GPS coordinates in under 3 seconds.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 py-6 border-b border-border1">
+            <div class="font-syne text-[0.72rem] font-extrabold text-green1 min-w-[32px] pt-0.5 tracking-wider">03</div>
+            <div>
+              <h4 class="font-syne text-base font-bold mb-1">Book your spot</h4>
+              <p class="text-[0.88rem] text-text2">Choose duration, view the cost, and send a booking request. The host is notified instantly.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 py-6 border-b border-border1">
+            <div class="font-syne text-[0.72rem] font-extrabold text-green1 min-w-[32px] pt-0.5 tracking-wider">04</div>
+            <div>
+              <h4 class="font-syne text-base font-bold mb-1">Host accepts & you pay</h4>
+              <p class="text-[0.88rem] text-text2">Payment is processed via EasyPaisa/JazzCash and held in escrow until session ends.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 py-6">
+            <div class="font-syne text-[0.72rem] font-extrabold text-green1 min-w-[32px] pt-0.5 tracking-wider">05</div>
+            <div>
+              <h4 class="font-syne text-base font-bold mb-1">Park, leave, rate</h4>
+              <p class="text-[0.88rem] text-text2">Session completes, funds release. Both parties rate each other to build platform trust.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <div class="w-[240px] h-[480px] bg-surface rounded-[32px] border-2 border-border2 overflow-hidden relative shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
+          <div class="w-[80px] h-[20px] bg-bg rounded-b-xl mx-auto relative z-10"></div>
+          
+          <div class="p-3 px-4">
+            <div class="text-[0.68rem] text-text3 font-semibold tracking-wide uppercase mb-2">Nearby Parking</div>
+            
+            <div class="w-full h-[200px] bg-bg3 rounded-xl relative overflow-hidden mb-3">
+              <div class="map-grid absolute inset-0 opacity-30"></div>
+              <div class="animate-ripple absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full border-[1.5px] border-blue-400/40"></div>
+              <div class="absolute w-2.5 h-2.5 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 bg-blue-400 top-1/2 left-1/2"></div>
+              <div class="absolute w-2.5 h-2.5 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 bg-green1 top-[40%] left-[55%]"></div>
+              <div class="absolute w-2.5 h-2.5 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 bg-green2 top-[65%] left-[30%]"></div>
+              <div class="absolute w-2.5 h-2.5 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 bg-green1 top-[25%] left-[70%]"></div>
+              <div class="absolute w-2.5 h-2.5 rounded-full border-2 border-white -translate-x-1/2 -translate-y-1/2 bg-amber1 top-[55%] left-[72%]"></div>
+              
+              <svg class="absolute inset-0 w-full h-full" viewBox="0 0 208 200" preserveAspectRatio="none">
+                <line x1="0" y1="100" x2="208" y2="100" stroke="rgba(255,255,255,0.07)" stroke-width="4"/>
+                <line x1="104" y1="0" x2="104" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="4"/>
+                <line x1="0" y1="60" x2="208" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="3"/>
+              </svg>
+            </div>
+
+            <div class="bg-surface2 border border-border2 rounded-lg p-2.5 mb-2">
+              <div class="flex justify-between items-center">
+                <span class="text-[0.72rem] font-semibold">Ali's Driveway</span>
+                <span class="text-[0.72rem] text-green1 font-bold">Rs 120/hr</span>
+              </div>
+              <div class="text-[0.65rem] text-text3 mt-0.5">0.3 km away · Safety 9/10 · CCTV</div>
+              <div class="text-amber1 text-[0.6rem] flex gap-0.5 mt-1">★★★★★</div>
+            </div>
+
+            <div class="bg-surface2 border border-border2 rounded-lg p-2.5 mb-2">
+              <div class="flex justify-between items-center">
+                <span class="text-[0.72rem] font-semibold">Gulberg Garage</span>
+                <span class="text-[0.72rem] text-green1 font-bold">Rs 80/hr</span>
+              </div>
+              <div class="text-[0.65rem] text-text3 mt-0.5">0.6 km away · Safety 7/10 · Covered</div>
+              <div class="text-amber1 text-[0.6rem] flex gap-0.5 mt-1">★★★★☆</div>
+            </div>
+
+            <button class="w-full py-2 bg-green1 text-[#0a1a0a] rounded-lg font-syne font-bold text-[0.7rem] mt-1 cursor-default">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles" class="py-24 px-[5%] bg-bg">
+    <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">Built for everyone</div>
+    <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4">Two sides of the same parking revolution</h2>
+    <p class="text-text2 font-light text-base max-w-[560px]">Whether you're looking for a spot or monetising your unused space, PeerPark works for you.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
+      <div class="bg-surface border border-border2 rounded-2xl p-10 relative overflow-hidden border-t-4 border-t-green1">
+        <span class="text-4xl block mb-4">🚗</span>
+        <h3 class="font-syne text-2xl font-extrabold mb-1">For Drivers</h3>
+        <p class="text-text2 text-[0.9rem] mb-6">Stop wasting time circling blocks. Find and book secure, affordable parking in seconds.</p>
+        <ul class="flex flex-col gap-3">
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Real-time map with live availability</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>AI-recommended spots based on your history</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Filter by price, safety, EV charging, CCTV</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Escrow-protected payments via EasyPaisa/JazzCash</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Digital invoice after every session</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Rate hosts and read community reviews</li>
+        </ul>
+      </div>
+
+      <div class="bg-surface border border-border2 rounded-2xl p-10 relative overflow-hidden border-t-4 border-t-accent">
+        <span class="text-4xl block mb-4">🏡</span>
+        <h3 class="font-syne text-2xl font-extrabold mb-1">For Hosts</h3>
+        <p class="text-text2 text-[0.9rem] mb-6">Your unused driveway is earning potential. List it once and earn while you sleep.</p>
+        <ul class="flex flex-col gap-3">
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>List your space in minutes with photos & map pin</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Set your own hourly rate and availability calendar</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Admin-verified listing for driver trust</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Accept or decline booking requests</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Instant in-app notifications for every request</li>
+          <li class="flex items-start gap-2.5 text-[0.88rem] text-text2"><div class="w-[18px] h-[18px] rounded-full bg-[rgba(74,222,128,0.1)] border border-border2 flex items-center justify-center shrink-0 mt-0.5 text-[0.65rem] text-green1">✓</div>Build your safety reputation through ratings</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" class="py-24 px-[5%] bg-bg2">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+      <div>
+        <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">Intelligence layer</div>
+        <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4">AI that learns your parking preferences</h2>
+        <p class="text-text2 font-light text-base mb-8">PeerPark's recommendation engine analyzes your booking history, location patterns, and real-time demand to surface the best spots for you.</p>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-3 items-start">
+            <div class="w-9 h-9 shrink-0 bg-surface2 border border-border2 rounded-lg flex items-center justify-center text-base">🧠</div>
+            <div>
+              <h4 class="font-syne text-[0.95rem] font-bold mb-1">Personalized Recommendations</h4>
+              <p class="text-[0.82rem] text-text2">The system learns from your past sessions — preferred price ranges, safety minimums, and location patterns — to rank results for you specifically.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-9 h-9 shrink-0 bg-surface2 border border-border2 rounded-lg flex items-center justify-center text-base">📊</div>
+            <div>
+              <h4 class="font-syne text-[0.95rem] font-bold mb-1">Demand Prediction</h4>
+              <p class="text-[0.82rem] text-text2">High-demand zones and peak hours are analyzed to suggest pre-booking when supply is expected to tighten.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-9 h-9 shrink-0 bg-surface2 border border-border2 rounded-lg flex items-center justify-center text-base">🔒</div>
+            <div>
+              <h4 class="font-syne text-[0.95rem] font-bold mb-1">Safety Scoring</h4>
+              <p class="text-[0.82rem] text-text2">Each space gets a 1-10 Safety Index based on CCTV coverage, lighting, review history, and community reports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-surface border border-border2 rounded-2xl p-6">
+          <div class="text-[0.72rem] text-text3 uppercase tracking-wide font-semibold mb-4">AI Recommendation Engine</div>
+
+          <div class="bg-bg rounded-lg p-3 border border-border1 mb-2.5 text-[0.82rem] text-text2">
+            <div class="text-[0.68rem] text-text3 mb-1 uppercase tracking-wide">User Context</div>
+            <div>Driver at DHA Phase 5 · Budget ≤ Rs 150/hr · Prefers covered & CCTV · Safety ≥ 7</div>
+          </div>
+
+          <div class="bg-[rgba(74,222,128,0.05)] rounded-lg p-3 border border-[rgba(74,222,128,0.15)] text-[0.82rem]">
+            <div class="text-[0.68rem] text-green1 mb-2 uppercase tracking-wide font-semibold">✦ AI Suggestions</div>
+            
+            <div class="flex justify-between items-center py-2 border-b border-border1">
+              <div>
+                <div class="font-medium text-[0.82rem]">Raza's Covered Garage</div>
+                <div class="text-[0.7rem] text-text3 mt-0.5">0.2 km · Rs 120/hr · CCTV · Covered</div>
+              </div>
+              <div class="text-[0.72rem] text-green1 font-bold bg-[rgba(74,222,128,0.08)] px-2 py-0.5 rounded">9.2 / 10</div>
+            </div>
+            
+            <div class="flex justify-between items-center py-2 border-b border-border1">
+              <div>
+                <div class="font-medium text-[0.82rem]">Model Town Driveway</div>
+                <div class="text-[0.7rem] text-text3 mt-0.5">0.5 km · Rs 100/hr · CCTV · Gated</div>
+              </div>
+              <div class="text-[0.72rem] text-green1 font-bold bg-[rgba(74,222,128,0.08)] px-2 py-0.5 rounded">8.7 / 10</div>
+            </div>
+            
+            <div class="flex justify-between items-center pt-2">
+              <div>
+                <div class="font-medium text-[0.82rem]">Gulberg Commercial Spot</div>
+                <div class="text-[0.7rem] text-text3 mt-0.5">0.8 km · Rs 80/hr · Monitored</div>
+              </div>
+              <div class="text-[0.72rem] text-green1 font-bold bg-[rgba(74,222,128,0.08)] px-2 py-0.5 rounded">7.9 / 10</div>
+            </div>
+          </div>
+
+          <div class="mt-3 text-[0.72rem] text-text3 text-center">
+            Based on 14 past sessions · Updated in real time
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admin" class="py-24 px-[5%] bg-bg">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
+      <div class="order-2 md:order-1">
+        <div class="bg-surface border border-border2 rounded-2xl overflow-hidden">
+          <div class="bg-bg px-4 py-3 border-b border-border1 text-[0.78rem] font-semibold text-text2 flex items-center gap-1.5">
+            <div class="w-1.5 h-1.5 rounded-full bg-red1"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-amber1"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-green1"></div>
+            <span class="ml-1">PeerPark Admin Dashboard</span>
+          </div>
+          <div class="p-5">
+            <div class="grid grid-cols-3 gap-2 mb-4">
+              <div class="bg-bg border border-border1 rounded-lg p-2.5">
+                <div class="font-syne text-xl font-extrabold text-green1">142</div>
+                <div class="text-[0.62rem] text-text3 mt-0.5 uppercase tracking-wide">Active Listings</div>
+              </div>
+              <div class="bg-bg border border-border1 rounded-lg p-2.5">
+                <div class="font-syne text-xl font-extrabold text-amber1">17</div>
+                <div class="text-[0.62rem] text-text3 mt-0.5 uppercase tracking-wide">Pending Review</div>
+              </div>
+              <div class="bg-bg border border-border1 rounded-lg p-2.5">
+                <div class="font-syne text-xl font-extrabold text-red1">3</div>
+                <div class="text-[0.62rem] text-text3 mt-0.5 uppercase tracking-wide">Open Disputes</div>
+              </div>
+            </div>
+
+            <table class="w-full border-collapse text-[0.75rem]">
+              <thead>
+                <tr>
+                  <th class="text-left text-text3 px-2 py-1.5 border-b border-border1 font-medium text-[0.68rem] uppercase tracking-wide">Host</th>
+                  <th class="text-left text-text3 px-2 py-1.5 border-b border-border1 font-medium text-[0.68rem] uppercase tracking-wide">Listing</th>
+                  <th class="text-left text-text3 px-2 py-1.5 border-b border-border1 font-medium text-[0.68rem] uppercase tracking-wide">Submitted</th>
+                  <th class="text-left text-text3 px-2 py-1.5 border-b border-border1 font-medium text-[0.68rem] uppercase tracking-wide">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Hassan M.</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">DHA Driveway</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Today</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2"><span class="inline-block px-2 py-0.5 rounded font-semibold text-[0.65rem] bg-amber1/10 text-amber1 border border-amber1/20">Pending</span></td>
+                </tr>
+                <tr>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Ayesha K.</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Gulberg Garage</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Yesterday</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2"><span class="inline-block px-2 py-0.5 rounded font-semibold text-[0.65rem] bg-green1/10 text-green1 border border-green1/20">Approved</span></td>
+                </tr>
+                <tr>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Bilal R.</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Model Town Spot</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2">Jan 20</td>
+                  <td class="px-2 py-2 border-b border-border1 text-text2"><span class="inline-block px-2 py-0.5 rounded font-semibold text-[0.65rem] bg-green1/10 text-green1 border border-green1/20">Approved</span></td>
+                </tr>
+                <tr>
+                  <td class="px-2 py-2 text-text2">Zara S.</td>
+                  <td class="px-2 py-2 text-text2">Johar Town Spot</td>
+                  <td class="px-2 py-2 text-text2">Jan 19</td>
+                  <td class="px-2 py-2 text-text2"><span class="inline-block px-2 py-0.5 rounded font-semibold text-[0.65rem] bg-red1/10 text-red1 border border-red1/20">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">Platform governance</div>
+        <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4">Admin control at every layer</h2>
+        <p class="text-text2 font-light text-base mb-6">The web-based admin panel gives full visibility and control over platform operations — from host verification to dispute resolution.</p>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-3 items-start">
+            <div class="w-8 h-8 bg-surface2 border border-border2 rounded-lg flex items-center justify-center shrink-0 text-[0.85rem]">✅</div>
+            <div>
+              <div class="font-semibold text-[0.9rem] mb-0.5">Host Verification & Approval</div>
+              <div class="text-[0.8rem] text-text2">No spot goes live without admin review. Ownership declarations are checked before activation.</div>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-8 h-8 bg-surface2 border border-border2 rounded-lg flex items-center justify-center shrink-0 text-[0.85rem]">🔍</div>
+            <div>
+              <div class="font-semibold text-[0.9rem] mb-0.5">Activity Monitoring</div>
+              <div class="text-[0.8rem] text-text2">Real-time dashboard tracks bookings, payments, and user activity across the platform.</div>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-8 h-8 bg-surface2 border border-border2 rounded-lg flex items-center justify-center shrink-0 text-[0.85rem]">⚖️</div>
+            <div>
+              <div class="font-semibold text-[0.9rem] mb-0.5">Dispute Resolution</div>
+              <div class="text-[0.8rem] text-text2">Structured workflow for handling conflicts between drivers and hosts with fair, transparent outcomes.</div>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start">
+            <div class="w-8 h-8 bg-surface2 border border-border2 rounded-lg flex items-center justify-center shrink-0 text-[0.85rem]">🔐</div>
+            <div>
+              <div class="font-semibold text-[0.9rem] mb-0.5">Role-Based Access Control</div>
+              <div class="text-[0.8rem] text-text2">Strict RBAC separates driver, host, and admin permissions — no privilege escalation possible.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety" class="py-24 px-[5%] bg-bg2">
+    <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3">Performance targets</div>
+    <h2 class="font-syne text-[clamp(1.8rem,4vw,3rem)] font-extrabold tracking-tight text-text1 mb-4">Built to be fast, secure, and reliable</h2>
+    <p class="text-text2 font-light text-base mb-12">PeerPark is designed with strict SLAs and security-first architecture from the ground up.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">&lt; 3s</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">Map load time</div>
+        <div class="text-[0.78rem] text-text3">Spot markers render in under 3 seconds after GPS query</div>
+      </div>
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">&lt; 2s</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">API response</div>
+        <div class="text-[0.78rem] text-text3">Backend responds to all requests within 2 seconds under load</div>
+      </div>
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">99.5%</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">Uptime SLA</div>
+        <div class="text-[0.78rem] text-text3">Cloud infrastructure availability guarantee per calendar month</div>
+      </div>
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">TLS 1.3</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">Encryption</div>
+        <div class="text-[0.78rem] text-text3">All client-server transmissions encrypted with latest TLS</div>
+      </div>
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">bcrypt</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">Password security</div>
+        <div class="text-[0.78rem] text-text3">All passwords hashed using bcrypt before database storage</div>
+      </div>
+      <div class="bg-surface border border-border1 rounded-xl p-6 hover:border-border2 transition-colors">
+        <div class="font-syne text-[1.8rem] font-extrabold text-green1 mb-1">Daily</div>
+        <div class="text-[0.82rem] font-semibold text-text1 mb-1">Backups</div>
+        <div class="text-[0.78rem] text-text3">Automated incremental database backups for zero data loss</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="bg-bg text-center py-24 px-[5%] border-t border-border1 relative overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[radial-gradient(ellipse,rgba(74,222,128,0.1)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="text-[0.72rem] font-semibold tracking-widest uppercase text-green1 mb-3 relative z-10">Get started</div>
+    <h2 class="font-syne text-[clamp(2rem,5vw,3.5rem)] font-extrabold tracking-tight mb-4 max-w-[600px] mx-auto relative z-10">Stop searching. <em class="not-italic text-green1">Start parking.</em></h2>
+    <p class="text-text2 mb-10 font-light relative z-10">PeerPark is coming to Android and iOS. Join the waitlist and be the first to transform how Lahore parks.</p>
+    
+    <div class="flex flex-wrap justify-center gap-4 relative z-10">
+      <a href="#" class="bg-green1 text-[#0a1a0a] px-8 py-3.5 rounded-lg font-syne font-bold text-[0.95rem] hover:-translate-y-0.5 hover:bg-accent transition-all">
+        📱 Download for Android
+      </a>
+      <a href="#" class="bg-transparent text-text2 border border-border2 px-7 py-3.5 rounded-lg text-[0.95rem] hover:border-green1 hover:text-green1 transition-all">
+        🍎 Coming to iOS
+      </a>
+    </div>
+    <div class="mt-8 text-[0.78rem] text-text3 relative z-10">
+      A final year project by M. Hassan Jawad Mirza, Abdullah Ehtisham & Muhammad Fahad · Supervised by Ma'am Saman Asad · The University of Lahore
+    </div>
+  </section>
+
+  <footer class="bg-bg2 border-t border-border1 py-8 px-[5%] flex justify-between items-center text-[0.8rem] color-text3 flex-wrap gap-4">
+    <div class="font-syne font-extrabold text-green1 text-base">Peer<em class="text-text1">Park</em></div>
+    <div class="flex gap-6">
+      <a href="#features" class="text-text3 hover:text-green1 transition-colors">Features</a>
+      <a href="#how" class="text-text3 hover:text-green1 transition-colors">How it Works</a>
+    </div>
+    <div class="text-text3">BSCS Computer Science · UOL · Spring 2023-2027</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
